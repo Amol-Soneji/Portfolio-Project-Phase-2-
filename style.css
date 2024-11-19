@@ -20,6 +20,10 @@ top: 0;
     text-decoration: none;
 }
 
+#navLinks > li > a:hover{
+
+}
+
 footer{
 display: flex;
 position: fixed;
