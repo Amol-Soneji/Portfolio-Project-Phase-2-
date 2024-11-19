@@ -1,0 +1,31 @@
+body {
+}
+
+header{
+
+}
+
+#homeworks, #projects{
+    border: solid 3px #000000;
+}
+
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a{
+    display: block;
+    text-decoration: none;
+    text-align: right;
+}
+
+footer a:hover{
+
+}
