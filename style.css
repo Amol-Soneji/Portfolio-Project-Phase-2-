@@ -6,17 +6,18 @@ top: 0;
 
 #navLinks{
     display: flex;
-    align-content: space-evenly;
+    justify-content: space-evenly;
     list-style: none;
     font-size: 1.1rem;
-    height: 100%;
+    width: 100vw;
 }
 
-#navLinks > li{
+/**#navLinks > li{
     display: block;
-}
+}*/
 
 #navLinks > li > a{
+    display: block;
     text-decoration: none;
 }
 
