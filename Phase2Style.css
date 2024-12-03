@@ -1,3 +1,31 @@
+@keyframes pLinkHover {
+    0% {
+        color: #763F48;
+        background-color: #E6EDB7;
+    }
+
+    25% {
+        color: #F5D9D9;
+        background-image: linear-gradient(to bottom right, #000000 0%, #6F8063 50%, #E6EDB7 100%);
+    }
+
+    50% {
+        color: #FFFFFF;
+        background-image: linear-gradient(to bottom right, #6F8063 0%, #353A34 25%, #000000 50%, #353A34 75%, #6F8063 100%);
+    }
+
+    75% {
+        color: #F5D9D9;
+        background-image: linear-gradient(to bottom right, #E6EDB7 0%, #6F8063 50%, #000000 100%);
+    }
+
+    100% {
+        color: #763F48;
+        background-color: #E6EDB7;
+    }
+}
+
+
 body {
 }
 
@@ -13,12 +41,65 @@ header {
 
 #homeworks, #projects {
     border: solid 3px #000000;
+    background-color: #F6D4BA;
 }
 
-iframe {
+.homework{
+    display: grid;
+    margin: auto 2%;
+    grid: 2.8rem 125px 250px / auto auto auto;
+    gap: 4px;
+}
+
+.project {
+    display: grid;
+    margin: auto 2%;
+    grid: 2.8rem 125px 250px / auto auto auto;
+    gap: 4px;
+}
+
+.projectTitle {
+    text-align: center;
+    margin-bottom: 0;
+    grid-area: 1 / 1 / 2 / -1;
+    border: 2px solid black;
+}
+
+.description {
+    grid-area: 2 / 1 / 3 / 3;
+    border: 2px solid black;
+}
+
+.projOrHWLink {
+    grid-area: 2 / 3 / 3 / -1;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+    color: #763F48;
+    background-color: #E6EDB7;
+}
+
+    .projOrHWLink:hover {
+        animation-name: pLinkHover;
+        animation-duration: 2s;
+    }
+
+.link-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.link-div {
+    font-weight: 500 !important;
+}
+
+.projIframe {
+    grid-area: 3 / 1 / -1 / -1;
     width: 100%;
-    height: 62.5%;
-    margin-top: 4%;
+    height: 100%;
+    background-color: #FFFFFF;
 }
 
 h2 {
@@ -27,12 +108,11 @@ h2 {
 }
 
 h3, .description, .projOrHWLink {
-
+    font-family: "Merriweather", Serif;
+    font-weight: 100;
 }
 
-.projOrHWLink{
-    display: block;
-}
+
 
 footer {
     position: fixed;
@@ -47,5 +127,6 @@ footer a {
 }
 
 footer a:hover {
-        
+        background-color: black;
+        color: white;
 }
