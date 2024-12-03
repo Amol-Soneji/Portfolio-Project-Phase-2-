@@ -11,6 +11,7 @@ const drawingViewProperties = drawingArea.getBoundingClientRect();
 
 let drawRendering = drawingArea.getContext("2d");
 let canvasPresenting;
+
 async function initializeCanvasPresenter() {
     const inkInstance = navigator.ink;
     canvasPresenting = await inkInstance.requestPresenter({ presentationArea: drawingArea });
